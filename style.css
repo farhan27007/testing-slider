@@ -4,7 +4,6 @@ body {
 }
 .shadow-effect {
     background: #fff;
-    padding: 20px;
     border-radius: 4px;
     text-align: center;
     border:1px solid #ECECEC;
@@ -41,13 +40,11 @@ body {
     opacity: 1;
     -webkit-transform: scale3d(1.0, 1.0, 1);
     transform: scale3d(1.0, 1.0, 1);
+    margin-right: -50px;
+    margin-left: -50px;
 }
 .owl-carousel .owl-item img {
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    max-width: 90px;
-    border-radius: 50%;
-    margin: 0 auto 17px;
+ border-radius: 4px;
 }
 #testimonials-list.owl-carousel .owl-dots .owl-dot.active span,
 #testimonials-list.owl-carousel .owl-dots .owl-dot:hover span {
@@ -74,4 +71,10 @@ body {
     transform-origin: 50% 50% 0;
     transition: all 250ms ease-out 0s;
     width: 20px;
+}
+
+@media (max-width: 767px) {
+    #testimonials-list .owl-item.active.center .item {
+    margin: 10px;
+}
 }
